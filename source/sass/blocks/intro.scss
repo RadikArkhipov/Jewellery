@@ -1,0 +1,53 @@
+.intro {
+  font-family: "CormorantGaramond", "Times New Roman", serif;
+  color: #ffffff;
+  min-height: 463px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("../img/uploads/bg-dt-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/uploads/bg-dt-index@2x.jpg");
+  }
+
+  &::after {
+    @include pseudo-elem;
+    background-color: rgba(86, 64, 52, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// .intro__container {
+//   background-color: rgba(86, 64, 52, 0.7);
+//   min-height: 463px;
+//   display: flex;
+//   align-items: center;
+// }
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.intro__slogan {
+  @include font(45,58);
+  font-weight: 700;
+  opacity: 0.58;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.intro__text {
+  @include font(38,49);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}

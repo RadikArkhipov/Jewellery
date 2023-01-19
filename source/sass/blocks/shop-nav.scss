@@ -1,0 +1,27 @@
+.shop-nav__list {
+  @include list-reset;
+  @include font(18,13);
+  color: rgba(255, 255, 255, 0.75);
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+  display: none;
+}
+
+.shop-nav__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.shop-nav__account-link {
+  @include font(18,13);
+  text-decoration: none;
+  display: none;
+}
