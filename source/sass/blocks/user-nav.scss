@@ -38,6 +38,10 @@
     top: 135px;
     position: absolute;
     display: none;
+
+    @media (max-width: $tablet-width) {
+      top: 102px;
+    }
   }
 
   label {
@@ -59,6 +63,22 @@
     outline: none;
     border: 0;
 
+    &::-webkit-search-decoration {
+      display: none;
+    }
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    &::-webkit-search-results-button {
+      display: none;
+    }
+
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+
     @media (max-width: $desktop-width) {
       width: 100%;
       border-radius: 21px;
@@ -72,6 +92,20 @@
         color: transparent;
         margin-left: 9px;
       }
+    }
+  }
+
+  input[type="text"] {
+    &::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
     }
   }
 }
@@ -98,7 +132,7 @@
 
   @media (max-width: $tablet-width) {
     right: 15px;
-    top: 35px;
+    top: 37px;
   }
 
   svg {

@@ -6,6 +6,10 @@
   flex-wrap: wrap;
   margin-bottom: 55px;
   display: none;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .shop-nav__item {

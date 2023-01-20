@@ -21,8 +21,16 @@
 
 .page-header__logo {
   position: absolute;
-  left: 45%;
+  left: 47%;
   top: 12%;
+
+  @media (max-width: $desktop-width) {
+    top: 22%;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 43%;
+  }
 }
 
 .logo-mobile {
@@ -48,7 +56,7 @@
     @include font(24,17);
     color: #ffffff;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: #a87b62;
   }
 
@@ -58,10 +66,18 @@
     svg {
       stroke: #ffffff;
     }
+
+    @media (max-width: $tablet-width) {
+      bottom: 630px;
+    }
   }
 
   .page-header__logo {
     top: 4%;
+
+    @media (max-width: $tablet-width) {
+      top: 3%;
+    }
   }
 
   .logo-desktop {
@@ -100,6 +116,10 @@
 
   .site-nav {
     padding-bottom: 80px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 50px;
+    }
   }
 
   .site-nav__list {

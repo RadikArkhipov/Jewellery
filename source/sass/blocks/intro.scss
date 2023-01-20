@@ -44,6 +44,7 @@
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  z-index: 1;
 }
 
 .intro__slogan {
@@ -52,6 +53,14 @@
   opacity: 0.58;
   letter-spacing: 0.03em;
   margin: 0;
+
+  @media (max-width: $desktop-width) {
+    opacity: 1;
+  }
+
+  @media (max-width: $tablet-width) {
+    @include font(38,50);
+  }
 }
 
 .intro__text {
@@ -59,4 +68,8 @@
   font-weight: 400;
   font-style: italic;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    @include font(34,44);
+  }
 }
