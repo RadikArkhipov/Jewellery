@@ -22,7 +22,21 @@
 .page-header__logo {
   position: absolute;
   left: 45%;
-  top: 24%;
+  top: 12%;
+}
+
+.logo-mobile {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.logo-desktop {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__site-nav {
@@ -48,10 +62,14 @@
 
   .page-header__logo {
     top: 4%;
+  }
 
-    svg {
-      fill: #ffffff;
-    }
+  .logo-desktop {
+    fill: #ffffff;
+  }
+
+  .logo-mobile {
+    fill: #ffffff;
   }
 
   .user-nav {
@@ -60,6 +78,13 @@
     padding-bottom: 88px;
     margin-bottom: 55px;
     display: block;
+
+    @media (max-width: $tablet-width) {
+      min-height: 142px;
+      padding-top: 71px;
+      padding-bottom: 71px;
+      margin-bottom: 45px;
+    }
   }
 
   .user-nav__search {

@@ -11,6 +11,12 @@
     padding-bottom: 63px;
     position: relative;
   }
+
+  @media (max-width: $tablet-width) {
+    min-height: 92px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
 }
 
 .user-nav__search {
@@ -88,6 +94,11 @@
     position: absolute;
     right: 45px;
     top: 55px;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: 15px;
+    top: 35px;
   }
 
   svg {
