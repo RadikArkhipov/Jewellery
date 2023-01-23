@@ -35,69 +35,67 @@
       </svg>
     </div>
     <header class="page-header page-header--nav-nojs">
-      <div class="page-header__container">
-        <a href="#" class="page-header__logo" aria-label="Логотип интернет-магазина Jewellery">
-          <svg class="logo-desktop" fill="#A87B62" width="66" height="66">
+      <div class="container page-header__user-nav user-nav">
+        <form action="#" method="post" class="user-nav__search">
+          <label>
+            <svg fill="#000000" width="14" height="14">
+              <use href="#icon-search"></use>
+            </svg>
+            <input type="search" name="user-nav__search" autocomplete="off" placeholder="Type here to search">
+            <span class="visually-hidden">Поиск</span>
+          </label>
+        </form>
+        <button class="user-nav__toggle js_openMenu" aria-label="Открыть меню">
+          <svg stroke="#1D1613" width="25" height="18">
+            <use href="#icon-burger"></use>
+          </svg>
+        </button>
+        <a href="#" class="user-nav__logo" aria-label="Логотип интернет-магазина Jewellery">
+          <svg class="user-nav__logo-desktop" fill="#A87B62" width="66" height="66">
             <use href="#logo"></use>
           </svg>
-          <svg class="logo-mobile" fill="#A87B62" width="52" height="52">
+          <svg class="user-nav__logo-mobile" fill="#A87B62" width="52" height="52">
             <use href="#logo"></use>
           </svg>
         </a>
-        <div class="container page-header__user-nav user-nav">
-          <form action="#" method="post" class="user-nav__search">
-            <label>
-              <svg fill="#000000" width="14" height="14">
-                <use href="#icon-search"></use>
-              </svg>
-              <input type="search" name="user-nav__search" autocomplete="off" placeholder="Type here to search">
-              <span class="visually-hidden">Поиск</span>
-            </label>
-          </form>
-          <a href="#" class="user-nav__account-link" aria-label="Перейти в личный кабинет">Login</a>
-          <a href="#" class="user-nav__cart-link" aria-label="Перейти в корзину">
-            <svg fill="none" stroke="#1D1613" width="20" height="18">
-              <use href="#icon-cart"></use>
-            </svg>
-            Cart 0
-          </a>
-        </div>
-        <div class="container page-header__site-nav site-nav shop-nav">
-          <button class="site-nav__toggle js_openMenu" aria-label="Открыть меню">
-            <svg stroke="#1D1613" width="25" height="18">
-              <use href="#icon-burger"></use>
-            </svg>
-          </button>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="#">What’s new</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#">Chokers</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#">Necklaces</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#">Rings</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#">Earrings</a>
-            </li>
-          </ul>
-          <ul class="shop-nav__list">
-            <li class="shop-nav__item">
-              <a href="#">About CH</a>
-            </li>
-            <li class="shop-nav__item">
-              <a href="#">Stores & Hours</a>
-            </li>
-            <li class="shop-nav__item">
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-          <a href="#" class="shop-nav__account-link" aria-label="Перейти в личный кабинет">Login</a>
-        </div>
+        <a href="#" class="user-nav__account-link" aria-label="Перейти в личный кабинет">Login</a>
+        <a href="#" class="user-nav__cart-link" aria-label="Перейти в корзину">
+          <svg fill="none" stroke="#1D1613" width="20" height="18">
+            <use href="#icon-cart"></use>
+          </svg>
+          Cart 0
+        </a>
+      </div>
+      <div class="container page-header__site-nav site-nav shop-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="#">What’s new</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Chokers</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Necklaces</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Rings</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+        <ul class="shop-nav__list">
+          <li class="shop-nav__item">
+            <a href="#">About CH</a>
+          </li>
+          <li class="shop-nav__item">
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li class="shop-nav__item">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <a href="#" class="shop-nav__account-link" aria-label="Перейти в личный кабинет">Login</a>
       </div>
     </header>
     <main class="page-main">

@@ -19,50 +19,41 @@
   }
 }
 
-.page-header__logo {
-  position: absolute;
-  left: 47%;
-  top: 12%;
+.page-header__user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 19px;
 
   @media (max-width: $desktop-width) {
-    top: 22%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 126px;
   }
 
   @media (max-width: $tablet-width) {
-    left: 43%;
-  }
-}
-
-.logo-mobile {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.logo-desktop {
-  @media (max-width: $tablet-width) {
-    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 92px;
   }
 }
 
 .page-header__site-nav {
   position: relative;
+  padding-top: 18px;
+  padding-bottom: 19px;
 }
 
 .page-header--nav-open {
-  .page-header__container {
-    @include font(24,17);
-    color: #ffffff;
-    position: absolute;
-    z-index: 2;
-    background-color: #a87b62;
-  }
+  @include font(24,17);
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  background-color: #a87b62;
 
-  .site-nav__toggle {
-    bottom: 705px;
 
+  .user-nav__toggle {
     svg {
       stroke: #ffffff;
     }
@@ -72,34 +63,24 @@
     }
   }
 
-  .page-header__logo {
-    top: 4%;
-
-    @media (max-width: $tablet-width) {
-      top: 3%;
-    }
-  }
-
-  .logo-desktop {
+  .user-nav__logo-desktop {
     fill: #ffffff;
   }
 
-  .logo-mobile {
+  .user-nav__logo-mobile {
     fill: #ffffff;
   }
 
   .user-nav {
-    min-height: 176px;
-    padding-top: 88px;
-    padding-bottom: 88px;
-    margin-bottom: 55px;
-    display: block;
+    min-height: 136px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
 
     @media (max-width: $tablet-width) {
-      min-height: 142px;
-      padding-top: 71px;
-      padding-bottom: 71px;
-      margin-bottom: 45px;
+      min-height: 102px;
+      padding-top: 20px;
+      padding-bottom: 30px;
     }
   }
 
@@ -115,9 +96,11 @@
   }
 
   .site-nav {
+    margin-top: 95px;
     padding-bottom: 80px;
 
     @media (max-width: $tablet-width) {
+      margin-top: 85px;
       padding-bottom: 50px;
     }
   }

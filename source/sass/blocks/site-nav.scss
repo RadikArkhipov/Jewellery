@@ -1,27 +1,7 @@
 .site-nav {
-  padding-top: 18px;
-  padding-bottom: 19px;
-
   @media (max-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 0;
-  }
-}
-
-.site-nav__toggle {
-  @include button-reset;
-  bottom: 55px;
-  left: 45px;
-  position: absolute;
-  display: none;
-
-  @media (max-width: $desktop-width) {
-    display: flex;
-  }
-
-  @media (max-width: $tablet-width) {
-    bottom: 40px;
-    left: 15px;
   }
 }
 
