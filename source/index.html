@@ -32,6 +32,12 @@
         <symbol viewBox="0 0 25 18" id="icon-burger">
           <path d="M0 1H25M0 9H25M0 17H25" stroke-width="2"/>
         </symbol>
+        <symbol viewBox="0 0 30 11" id="icon-arrow-left">
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
+        </symbol>
+        <symbol viewBox="0 0 30 11" id="icon-arrow-right">
+          <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="#A87B62"/>
+        </symbol>
       </svg>
     </div>
     <header class="page-header page-header--nav-nojs">
@@ -108,16 +114,277 @@
       </section>
       <section class="container novelties">
         <h2>New In</h2>
-        <div class="novelties-container">
+        <p>Shop Now</p>
+        <div class="novelties__slider-container swiper-container">
+          <ul class="novelties__slider swiper-wrapper">
+            <li class="novelties__slide swiper-slide">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/purple-gemstone-necklace-mobile.jpg 1x, img/product-card/purple-gemstone-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/purple-gemstone-necklace-tablet.jpg 1x, img/product-card/purple-gemstone-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/purple-gemstone-necklace-desktop.jpg" srcset="img/product-card/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Necklace with amethyst</h3>
+                  <b>$ 145</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/layered-choker-necklace-mobile.jpg 1x, img/product-card/layered-choker-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/layered-choker-necklace-tablet.jpg 1x, img/product-card/layered-choker-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/layered-choker-necklace-desktop.jpg" srcset="img/product-card/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Layered сhoker</h3>
+                  <b>$ 115</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/dainty-gold-necklace-mobile.jpg 1x, img/product-card/dainty-gold-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/dainty-gold-necklace-tablet.jpg 1x, img/product-card/dainty-gold-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/dainty-gold-necklace-desktop.jpg" srcset="img/product-card/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Gold chain</h3>
+                  <b>$ 215</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a href="#">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/galaxy-earrings-mobile.jpg 1x, img/product-card/galaxy-earrings-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/galaxy-earrings-tablet.jpg 1x, img/product-card/galaxy-earrings-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/galaxy-earrings-desktop.jpg" srcset="img/product-card/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Galaxy earrings</h3>
+                  <b>$ 95</b>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- <ul class="novelties__slider swiper-wrapper">
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/purple-gemstone-necklace-mobile.jpg 1x, img/product-card/purple-gemstone-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/purple-gemstone-necklace-tablet.jpg 1x, img/product-card/purple-gemstone-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/purple-gemstone-necklace-desktop.jpg" srcset="img/product-card/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Necklace with amethyst</h3>
+                  <b>$ 145</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/layered-choker-necklace-mobile.jpg 1x, img/product-card/layered-choker-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/layered-choker-necklace-tablet.jpg 1x, img/product-card/layered-choker-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/layered-choker-necklace-desktop.jpg" srcset="img/product-card/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Layered сhoker</h3>
+                  <b>$ 115</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/dainty-gold-necklace-mobile.jpg 1x, img/product-card/dainty-gold-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/dainty-gold-necklace-tablet.jpg 1x, img/product-card/dainty-gold-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/dainty-gold-necklace-desktop.jpg" srcset="img/product-card/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Gold chain</h3>
+                  <b>$ 215</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/galaxy-earrings-mobile.jpg 1x, img/product-card/galaxy-earrings-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/galaxy-earrings-tablet.jpg 1x, img/product-card/galaxy-earrings-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/galaxy-earrings-desktop.jpg" srcset="img/product-card/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Galaxy earrings</h3>
+                  <b>$ 95</b>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="novelties__slider swiper-wrapper">
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/purple-gemstone-necklace-mobile.jpg 1x, img/product-card/purple-gemstone-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/purple-gemstone-necklace-tablet.jpg 1x, img/product-card/purple-gemstone-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/purple-gemstone-necklace-desktop.jpg" srcset="img/product-card/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Necklace with amethyst</h3>
+                  <b>$ 145</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/layered-choker-necklace-mobile.jpg 1x, img/product-card/layered-choker-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/layered-choker-necklace-tablet.jpg 1x, img/product-card/layered-choker-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/layered-choker-necklace-desktop.jpg" srcset="img/product-card/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Layered сhoker</h3>
+                  <b>$ 115</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/dainty-gold-necklace-mobile.jpg 1x, img/product-card/dainty-gold-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/dainty-gold-necklace-tablet.jpg 1x, img/product-card/dainty-gold-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/dainty-gold-necklace-desktop.jpg" srcset="img/product-card/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Gold chain</h3>
+                  <b>$ 215</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/galaxy-earrings-mobile.jpg 1x, img/product-card/galaxy-earrings-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/galaxy-earrings-tablet.jpg 1x, img/product-card/galaxy-earrings-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/galaxy-earrings-desktop.jpg" srcset="img/product-card/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Galaxy earrings</h3>
+                  <b>$ 95</b>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="novelties__slider swiper-wrapper">
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/purple-gemstone-necklace-mobile.jpg 1x, img/product-card/purple-gemstone-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/purple-gemstone-necklace-tablet.jpg 1x, img/product-card/purple-gemstone-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/purple-gemstone-necklace-desktop.jpg" srcset="img/product-card/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Necklace with amethyst</h3>
+                  <b>$ 145</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/layered-choker-necklace-mobile.jpg 1x, img/product-card/layered-choker-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/layered-choker-necklace-tablet.jpg 1x, img/product-card/layered-choker-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/layered-choker-necklace-desktop.jpg" srcset="img/product-card/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Layered сhoker</h3>
+                  <b>$ 115</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/dainty-gold-necklace-mobile.jpg 1x, img/product-card/dainty-gold-necklace-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/dainty-gold-necklace-tablet.jpg 1x, img/product-card/dainty-gold-necklace-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/dainty-gold-necklace-desktop.jpg" srcset="img/product-card/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Gold chain</h3>
+                  <b>$ 215</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__slide swiper-slide">
+              <a>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/product-card/galaxy-earrings-mobile.jpg 1x, img/product-card/galaxy-earrings-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/product-card/galaxy-earrings-tablet.jpg 1x, img/product-card/galaxy-earrings-tablet@2x.jpg 2x">
+                  <img class="novelties__slider-image" src="img/product-card/galaxy-earrings-desktop.jpg" srcset="img/product-card/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Фото украшения">
+                </picture>
+                <div class="novelties__info">
+                  <h3>Galaxy earrings</h3>
+                  <b>$ 95</b>
+                </div>
+              </a>
+            </li>
+          </ul> -->
+          <div class="novelties__slider-pagination swiper-pagination"></div>
+          <div class="container novelties__slider-controls">
+            <a class="novelties__slider-btn novelties__slider-btn--prev swiper-button-prev" href="#prev" aria-label="Предыдущий">
+              <svg width="30" height="11">
+                <use xlink:href="#icon-arrow-left"></use>
+              </svg>
+            </a>
+            <a class="novelties__slider-btn novelties__slider-btn--next swiper-button-next" href="#next" aria-label="Следующий">
+              <svg width="30" height="11">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="novelties-container">
           <button type="button" class="novelteis__slider-btn novelties__slider-btn--prev"></button>
           <button type="button" class="novelteis__slider-btn novelties__slider-btn--next"></button>
           <p class="novelties__slogan">Shop Now</p>
           <ul class="novelties__list">
             <li class="novelties__item">
-              <a></a>
+              <a>
+                <div class="novelties__info">
+                  <h3>Necklace with amethyst</h3>
+                  <b>$ 145</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__item">
+              <a>
+                <div class="novelties__info">
+                  <h3>Layered сhoker</h3>
+                  <b>$ 115</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__item">
+              <a>
+                <div class="novelties__info">
+                  <h3>Gold chain</h3>
+                  <b>$ 215</b>
+                </div>
+              </a>
+            </li>
+            <li class="novelties__item">
+              <a>
+                <div class="novelties__info">
+                  <h3>Galaxy earrings</h3>
+                  <b>$ 95</b>
+                </div>
+              </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </section>
     </main>
     <footer class="page-footer"></footer>
